@@ -7,7 +7,7 @@ const MessageRoutes = require("./routes/message")
 //tangina node modules yan lagi nlang nasasama 
 const app = express();
 const server = http.createServer(app);
-const io = socketIo(server, {cors: {origin: "*"}});
+const io = socketIo(server, {cors: {origin: "https://next-gen-solution.vercel.app"}});
 global.io = io;
 
 app.use(cors());
